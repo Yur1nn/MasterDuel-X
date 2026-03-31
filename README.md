@@ -1,4 +1,4 @@
-# YgoMaster
+# MiniDuel
 
 Offline Yu-Gi-Oh! Master Duel (PC)
 
@@ -20,13 +20,17 @@ Offline Yu-Gi-Oh! Master Duel (PC)
 - .NET Framework 4.8
 - The game downloaded on Steam (complete the in-game tutorial to download all data)
 
-YgoMaster is portable and can be used on any machine without Steam installed after being fully downloaded
+MiniDuel is portable and can be used on any machine without Steam installed after being fully downloaded
 
 ## Usage
 
 - Download the latest release from https://github.com/pixeltris/YgoMaster/releases
-- Copy the `YgoMaster` folder (the folder, not the contents of the folder) into the game folder
-- Run `YgoMasterClient.exe` (this should also auto run `YgoMaster.exe`)
+- Put the mod folder anywhere you want and name it whatever you want
+- Set `Data/Client/ClientSettings.json` -> `GameDirectory` to your Master Duel install folder
+- Set `Data/Server/Settings.json` -> `GameDirectory` to the same Master Duel install folder when running the server separately
+- If the client should auto-start a separate server package, set `Data/Client/ClientSettings.json` -> `ServerExecutablePath`
+- Run `MiniDuel.exe` first
+- Run `MiniDuelClient.exe` after the server is already running
 - *[If you see file load error popups, infinite loading screens, corrupt screens, etc follow these instructions](Docs/FileLoadError.md)*
 
 Additionally...
@@ -34,20 +38,30 @@ Additionally...
 - [It's recommended that you tailor the server settings to your preferences](Docs/Settings.md)
 - Download [VG.TCG.Decks.7z](https://github.com/pixeltris/YgoMaster/releases/download/v1.4/VG.TCG.Decks.7z) for ~6000 decks from the YGO video games
 - The custom duel starter UI can be accessed using the DUEL button on the home screen
-- When updating copy your `/YgoMaster/Data/Players/` folder
+- When updating copy your `/MiniDuel/Data/Players/` folder
 - [How to change language](Docs/ChangingLanguage.md)
 - [How to run on Linux](Docs/Linux.md)
+
+## Data Layout
+
+- `MiniDuel/Data/Common` contains data used by both the server and client
+- `MiniDuel/Data/Client` contains client-only config and custom client assets
+- `MiniDuel/Data/Server` contains server-only config and player save data
 
 ## Compiling from source
 
 - Install Visual Studio with C++ compilers
-- Run `Build.bat`
-- Copy the `YgoMaster` folder into the game folder as mentioned above
+- Run `Build.Server.bat` to build the server
+- Run `Build.Client.bat` to build the client
+- Run `Build.bat` to build both plus the loader
+- Run `Package.Server.bat` to create a server-only distributable in `dist/Server`
+- Run `Package.Client.bat` to create a client-only distributable in `dist/Client`
+- Point each package at the real game install using the `GameDirectory` setting instead of placing it inside the game folder
 
-Running `Build.bat` is the equivilant of:
+Running the build scripts is the equivilant of:
 
-- Compiling `YgoMaster.sln` with Visual Studio
-- Compiling `YgoMasterLoader.cpp` with `cl`
+- Compiling `MiniDuelServer.sln` or `MiniDuelClient.sln` with Visual Studio
+- Compiling `MiniDuelLoader.cpp` with `cl` to produce `MiniDuelLoader.dll`
 
 ## Related
 

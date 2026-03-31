@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE0FAEA9-D843-4DA2-9B59-1232DC9E54E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiniDuelClient</RootNamespace>
+    <AssemblyName>MiniDuelClient</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>MiniDuel\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;YGO_MASTER_CLIENT</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>MiniDuel\</OutputPath>
+    <DefineConstants>TRACE;YGO_MASTER_CLIENT</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MiniDuelClient\DuelTutorialSetting.cs" />
+    <Compile Include="MiniDuelClient\FixDeleteFile.cs" />
+    <Compile Include="MiniDuelClient\HomeViewTweaks.cs" />
+    <Compile Include="MiniDuelClient\CustomBackground.cs" />
+    <Compile Include="MiniDuelClient\AudioLoader.cs" />
+    <Compile Include="MiniDuelClient\FolderPicker.cs" />
+    <Compile Include="MiniDuelClient\DuelDll.ProxyFunctions.cs" />
+    <Compile Include="MiniDuelClient\DuelTapSync.cs" />
+    <Compile Include="MiniDuelClient\DuelEmoteHelper.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\ReflectionValidator.cs" />
+    <Compile Include="MiniDuelClient\FixLanguage.cs" />
+    <Compile Include="MiniDuelClient\SimpleProxy.cs" />
+    <Compile Include="MiniDuelClient\SoloVisualNovel.cs" />
+    <Compile Include="MiniDuelClient\SoloVisualNovelChapterView.cs" />
+    <Compile Include="MiniDuelClient\SoundInterceptor.cs" />
+    <Compile Include="MiniDuelClient\TradeUtils.cs" />
+    <Compile Include="MiniDuelClient\ClientSettings.Text.cs" />
+    <Compile Include="MiniDuelClient\DuelDll.cs" />
+    <Compile Include="MiniDuelClient\ActionSheetViewController.cs" />
+    <Compile Include="MiniDuelClient\AssetHelper.cs" />
+    <Compile Include="MiniDuelClient\AssetHelper.Solo.cs" />
+    <Compile Include="MiniDuelClient\ClientSettings.cs" />
+    <Compile Include="MiniDuelClient\CommonDialogViewController.cs" />
+    <Compile Include="MiniDuelClient\ConsoleHelper.cs" />
+    <Compile Include="MiniDuelClient\CRC32.cs" />
+    <Compile Include="MiniDuelClient\DelegateHelper.cs" />
+    <Compile Include="MiniDuelClient\DuelClientUtils.cs" />
+    <Compile Include="MiniDuelClient\DuelReplayUtils.cs" />
+    <Compile Include="MiniDuelClient\GameLauncher.cs" />
+    <Compile Include="MiniDuelClient\Hook.cs" />
+    <Compile Include="MiniDuelClient\csbool.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\Assembler.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\CastUtils.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Array.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Assembly.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Base.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2BindingFlags.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Class.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2ClassType.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Dictionary.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Field.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2List.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Method.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Object.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Param.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Property.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2String.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2SystemClass.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\IL2Utils.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\Import.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\RuntimeType.cs" />
+    <Compile Include="MiniDuelClient\IL2CPP\NativeUtils.cs" />
+    <Compile Include="MiniDuelClient\Program.cs" />
+    <Compile Include="MiniDuelClient\Properties\AssemblyInfo.cs" />
+    <Compile Include="MiniDuelClient\DuelStarter.cs" />
+    <Compile Include="MiniDuelClient\DeckEditorUtils.cs" />
+    <Compile Include="MiniDuelClient\UnityPlayerPdb.cs" />
+    <Compile Include="MiniDuelClient\WallpaperCycle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MiniDuelClient\app.config" />
+  </ItemGroup>
+  <Import Project="MiniDuel.Shared.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

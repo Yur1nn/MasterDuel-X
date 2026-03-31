@@ -3,18 +3,21 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-YgoMaster/Data/CardData/*
-YgoMaster/Data/CpuContest/*
-YgoMaster/Data/Decks/*
-YgoMaster/Data/Players/*
-YgoMaster/Data/Player.json
-YgoMaster/*.exe.config
-YgoMaster/*.vshost.*
-YgoMaster/*.exp
-YgoMaster/*.lib
-YgoMaster/*.exe
-YgoMaster/*.dll
-YgoMaster/Ultralight
+MiniDuel/Data/Common/CardData/**
+MiniDuel/Data/Server/CpuContest/**
+MiniDuel/Data/Common/Decks/**
+MiniDuel/Data/Server/Players/**
+MiniDuel/Data/Server/Player.json
+MiniDuel/*.exe.config
+MiniDuel/*.vshost.*
+MiniDuel/*.exp
+MiniDuel/*.lib
+MiniDuel/*.exe
+MiniDuel/*.dll
+MiniDuel/*.pdb
+MiniDuel/Ultralight
+MiniDuel/mono_log.txt
+dist/
 masterduel_Data/*
 
 # User-specific files
