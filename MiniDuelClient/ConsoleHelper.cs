@@ -744,7 +744,7 @@ namespace MiniDuelClient
                 case "logjson":// Logs json object at path
                     Console.WriteLine(YgomSystem.Utility.ClientWork.SerializePath(splitted[1]));
                     break;
-                case "cardswithart":// List all cards with art (requires setup of YgoMaster/Data/CardData/)
+                case "cardswithart":// List all cards with art (requires setup of MiniDuel/Data/Common/CardData/)
                     {
                         HashSet<int> missingCardsWithArt = new HashSet<int>();
                         IntPtr cardRarePtr = YgomSystem.Utility.ClientWork.GetByJsonPath("$.Master.CardRare");
@@ -794,7 +794,7 @@ namespace MiniDuelClient
                         }
                     }
                     break;
-                case "pvpops":// Generates enum for YgoMaster.PvpOperation
+                case "pvpops":// Generates enum for MiniDuel.PvpOperation
                     {
                         using (TextWriter tw = File.CreateText(Path.Combine(Program.CurrentDir, "PvpOps.txt")))
                         {

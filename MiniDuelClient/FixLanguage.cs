@@ -8,7 +8,7 @@ using System.Text;
 namespace MiniDuelClient
 {
     /// <summary>
-    /// Fixes language mismatch between LocalSave and LocalData (forces YgoMaster to use the active language)
+    /// Fixes language mismatch between LocalSave and LocalData (forces MiniDuel to use the active language)
     /// </summary>
     static class FixLanguage
     {

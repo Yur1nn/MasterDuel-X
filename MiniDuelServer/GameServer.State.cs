@@ -111,7 +111,7 @@ namespace MiniDuel
         /// </summary>
         int SoloRegulationId;
         /// <summary>
-        /// Show information about YgoMaster in the topics panel on the home screen
+        /// Show information about MiniDuel in the topics panel on the home screen
         /// </summary>
         bool ShowTopics;
         /// <summary>
@@ -760,7 +760,7 @@ namespace MiniDuel
                         case "--extractstructure":// Takes "StructureDecks.json" (obtained via "Master.Structure") and expands them into "/StructureDecks/"
                             ExtractStructureDecks();
                             break;
-                        case "--updateydk":// Updates "YdkIds.txt" based on a YgoMasterClient "carddata" dump and ygoprodeck cardinfo.php
+                        case "--updateydk":// Updates "YdkIds.txt" based on a MiniDuelClient "carddata" dump and ygoprodeck cardinfo.php
                             YdkHelper.GenerateIdMap(dataDirectory);
                             break;
 #if WITH_WIKI_DUMPER

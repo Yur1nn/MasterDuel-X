@@ -24,7 +24,7 @@ MiniDuel is portable and can be used on any machine without Steam installed afte
 
 ## Usage
 
-- Download the latest release from https://github.com/pixeltris/YgoMaster/releases
+- Download the latest upstream release from https://github.com/pixeltris/YgoMaster/releases
 - Put the mod folder anywhere you want and name it whatever you want
 - Set `Data/Client/ClientSettings.json` -> `GameDirectory` to your Master Duel install folder
 - Set `Data/Server/Settings.json` -> `GameDirectory` to the same Master Duel install folder when running the server separately
@@ -36,7 +36,7 @@ MiniDuel is portable and can be used on any machine without Steam installed afte
 Additionally...
 
 - [It's recommended that you tailor the server settings to your preferences](Docs/Settings.md)
-- Download [VG.TCG.Decks.7z](https://github.com/pixeltris/YgoMaster/releases/download/v1.4/VG.TCG.Decks.7z) for ~6000 decks from the YGO video games
+- Download [VG.TCG.Decks.7z](https://github.com/pixeltris/YgoMaster/releases/download/v1.4/VG.TCG.Decks.7z) from the upstream YgoMaster releases for ~6000 decks from the YGO video games
 - The custom duel starter UI can be accessed using the DUEL button on the home screen
 - When updating copy your `/MiniDuel/Data/Players/` folder
 - [How to change language](Docs/ChangingLanguage.md)

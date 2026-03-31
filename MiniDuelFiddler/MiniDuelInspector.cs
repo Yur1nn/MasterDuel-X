@@ -20,7 +20,7 @@ namespace MiniDuel
     // https://github.com/chouex/FiddlerExtensionExample
     // https://github.com/waf/WCF-Binary-Message-Inspector/blob/master/BinaryMessageFiddlerExtension/BinaryResponseInspector.cs
 
-    public class YgoMasterRequestInspector : Inspector2, IRequestInspector2
+    public class MiniDuelRequestInspector : Inspector2, IRequestInspector2
     {
         RichTextBox textControl;
         private byte[] binaryContent;
@@ -82,7 +82,7 @@ namespace MiniDuel
         }
     }
 
-    public class YgoMasterResponseInspector : Inspector2, IResponseInspector2
+    public class MiniDuelResponseInspector : Inspector2, IResponseInspector2
     {
         private RichTextBox textControl;
         private byte[] binaryContent;
@@ -147,7 +147,7 @@ namespace MiniDuel
 
     static class YgoMasterInspectorHelper
     {
-        static string updateDir = "YgoMasterUpdate";
+        static string updateDir = "MiniDuelUpdate";
         
         static YgoMasterInspectorHelper()
         {
@@ -172,7 +172,7 @@ namespace MiniDuel
             control.WordWrap = false;
             control.MaxLength = 100000000;
             control.Dock = DockStyle.Fill;
-            page.Text = "YgoMaster";
+            page.Text = "MiniDuel";
             page.Controls.Add(control);
             return control;
         }

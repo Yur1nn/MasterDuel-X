@@ -530,7 +530,7 @@ namespace MiniDuelClient
         /// </summary>
         public static string CustomTextEmotesListHeader;
         /// <summary>
-        /// How to fix this error:\ngithub.com/pixeltris/YgoMaster/blob/master/Docs/FileLoadError.md\n\n
+        /// How to fix this error:\nSee Docs/FileLoadError.md\n\n
         /// </summary>
         public static string CustomTextFileLoadErrorEx;
         /// <summary>
@@ -700,7 +700,7 @@ namespace MiniDuelClient
             DuelSettings.DefaultNamePlayer = Utils.GetValue<string>(data, "CustomTextDuelSettingsDefaultNamePlayer");
             DuelSettings.DefaultNameCPU = Utils.GetValue<string>(data, "CustomTextDuelSettingsDefaultNameCPU");
 
-            CustomTextFileLoadErrorEx = Utils.GetValue<string>(data, "CustomTextFileLoadErrorEx", "How to fix this error:\ngithub.com/pixeltris/YgoMaster/blob/master/Docs/FileLoadError.md\n\n");
+            CustomTextFileLoadErrorEx = Utils.GetValue<string>(data, "CustomTextFileLoadErrorEx", "How to fix this error:\nSee Docs/FileLoadError.md\n\n");
 
             CustomTextVisualNovelNext = Utils.GetValue<string>(data, "CustomTextVisualNovelNext");
             CustomTextVisualNovelSkip = Utils.GetValue<string>(data, "CustomTextVisualNovelSkip");
